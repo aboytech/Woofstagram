@@ -1,10 +1,12 @@
 import { StyleSheet, Text, View } from 'react-native';
 import { Inputs } from './src/Components/Register/Inputs.js';
+import { Homescreen } from './src/Components/Homescreen/Homescreen.js';
 
 export default function App() {
   return (
     <View style={styles.container}>
       <Inputs />
+      <Homescreen />
     </View>
   );
 }
@@ -12,8 +14,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#FAF9FA',
   },
 });
