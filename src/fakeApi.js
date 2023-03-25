@@ -1,5 +1,5 @@
 // "Fake" API data to use in your app
-const data = {
+export const data = {
     woofs: [
       {
         id: 'woof-1', 
