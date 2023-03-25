@@ -2,7 +2,7 @@ import React from 'react';
 import { Text } from 'react-native';
 import { stylesReusable } from './stylesReusable.js';
 
-const Heading = (props) => {
+export const Heading = (props) => {
 
 
   return (

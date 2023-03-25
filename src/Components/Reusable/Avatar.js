@@ -2,7 +2,7 @@ import React from 'react';
 import { Image } from 'react-native';
 import { stylesReusable } from './stylesReusable.js';
 
-const Avatar = (props) => {
+export const Avatar = (props) => {
 
 
   return (

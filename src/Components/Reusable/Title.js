@@ -2,7 +2,7 @@ import React from 'react';
 import { Text } from 'react-native';
 import { stylesReusable } from './stylesReusable.js';
 
-const Title = (props) => {
+export const Title = (props) => {
 
 
   return (

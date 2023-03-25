@@ -1,12 +1,14 @@
 import React from 'react';
-import { View } from 'react-native';
+import { View, Image, Text } from 'react-native';
+import { Title } from '../../Reusable/Title.js';
+import { woofPostStyles } from './woofPostStyles.js';
 
-const WoofPost = (props) => (
-  <View>
-    <Image source={{ uri: 'todo' }} />
-    <View>
-      <Text>todo</Text>
-      <Text>todo</Text>
+export const WoofPost = (props) => (
+  <View style={woofPostStyles.layout}>
+    <Image source={{ uri: props.image }} style={woofPostStyles.image} />
+    <View style={woofPostStyles.content}>
+      <Title>{props.title}</Title>
+      <Text style={woofPostStyles.description}>{props.description}</Text>
     </View>
   </View>
 );
