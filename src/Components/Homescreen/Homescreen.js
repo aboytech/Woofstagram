@@ -1,11 +1,9 @@
 import React from 'react';
-import { ScrollView } from 'react-native';
+import { ScrollView, FlatList } from 'react-native';
 import { WoofCard } from '../Specific/WoofCard/WoofCard.js';
 import { WoofPost } from '../Specific/WoofPost/WoofPost.js';
 import { Heading } from '../Reusable/Heading.js';
 import { data } from '../../fakeApi.js';
-import { Avatar } from '../Reusable/Avatar.js';
-import { Title } from '../Reusable/Title.js';
 
 export const HomeScreen = () => {
 
@@ -14,13 +12,13 @@ export const HomeScreen = () => {
 
         <Heading>Trending Woofs</Heading>
 
-        <ScrollView horizontal>
+        {<ScrollView horizontal style={{paddingLeft: 24}}>
           
           {data.woofs.map(woof => {
             return <WoofCard key={woof.id} name={woof.name} avatar={woof.avatar} />
           })}
 
-        </ScrollView>
+        </ScrollView>}
 
         <Heading>New Woof Posts</Heading>
 

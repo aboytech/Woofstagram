@@ -4,7 +4,7 @@ export const woofPostStyles = StyleSheet.create({
   layout: {
     marginHorizontal: 24,
     flexDirection: 'row',
-    marginVertical: 8,
+    marginVertical: 8
   },
   image: {
     width: 112,
